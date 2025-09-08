@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Dhurgasaran</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Only 6 lines of custom CSS as requested */
+        body { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); }
+        .hero-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; }
+        .profile-img { width: 250px; height: 250px; animation: float 3s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+        .card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .skill-badge:hover { transform: scale(1.05); transition: all 0.2s ease; }
+    </style>
+</head>
+
+<body>
+    <!-- Enhanced Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary shadow-lg">
+        <div class="container">
+            <a class="navbar-brand fs-3 fw-bold" href="#Home">
+                <i class="bi bi-person-circle me-2"></i>Portfolio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 px-3 fw-medium text-white" href="#Home">
+                            <i class="bi bi-house me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 px-3 fw-medium text-white" href="#About">
+                            <i class="bi bi-person me-1"></i>About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 px-3 fw-medium text-white" href="#Skills">
+                            <i class="bi bi-code-slash me-1"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 px-3 fw-medium text-white" href="#Projects">
+                            <i class="bi bi-folder me-1"></i>Projects
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 px-3 fw-medium text-white" href="#Contact">
+                            <i class="bi bi-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Enhanced Hero Section -->
+    <section class="hero-bg d-flex align-items-center text-white" id="Home" style="min-height: 80vh;">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <img src="image/Dhurga.jpg" alt="Dhurgasaran Profile" 
+                         class="profile-img img-fluid rounded-circle shadow-lg border border-white border-4">
+                </div>
+                <div class="col-lg-8">
+                    <div class="ps-lg-4">
+                        <h1 class="display-3 fw-bold mb-4">
+                            Hello, I'm <span class="text-warning">Dhurgasaran</span>
+                        </h1>
+                        <p class="fs-4 mb-4 opacity-90">
+                            <strong>I am a passionate web developer with a keen interest in creating 
+                            dynamic and responsive web applications.</strong>
+                        </p>
+                        <p class="fs-5 mb-4 opacity-75">
+                            I love learning new technologies and improving my skills. 
+                            I'm always looking for new challenges and opportunities to grow.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="#Contact" class="btn btn-light btn-lg px-4 py-3 rounded-pill fw-semibold">
+                                <i class="bi bi-envelope me-2"></i>Hire Me
+                            </a>
+                            <a href="Image/Dhurgasaran02.pdf" download="Dhurgasaran_Resume.pdf" 
+                               class="btn btn-warning btn-lg px-4 py-3 rounded-pill fw-semibold text-dark">
+                                <i class="bi bi-download me-2"></i>Download Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced About Section -->
+    <section class="py-5 bg-white" id="About">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h2 class="display-4 fw-bold text-center mb-5">
+                        <i class="bi bi-person-circle text-primary me-3"></i>About Me
+                    </h2>
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body p-5">
+                            <div class="row">
+                                <div class="col-lg-8 mx-auto text-center">
+                                    <p class="fs-4 text-muted lh-lg mb-4">
+                                        <strong>A self-driven developer from Theni with a B.Com.CA background. 
+                                        I transitioned into tech and now focus on building full-stack web 
+                                        applications using modern tools.</strong>
+                                    </p>
+                                    <div class="row g-4 mt-4">
+                                        <div class="col-md-4">
+                                            <div class="text-center">
+                                                <i class="bi bi-geo-alt-fill fs-1 text-primary mb-2"></i>
+                                                <h5 class="fw-bold">Location</h5>
+                                                <p class="text-muted">Theni, Tamil Nadu</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="text-center">
+                                                <i class="bi bi-mortarboard-fill fs-1 text-success mb-2"></i>
+                                                <h5 class="fw-bold">Education</h5>
+                                                <p class="text-muted">B.Com.CA <br/>(Computer Applications)</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="text-center">
+                                                <i class="bi bi-code-square fs-1 text-warning mb-2"></i>
+                                                <h5 class="fw-bold">Focus</h5>
+                                                <p class="text-muted">Full-Stack Development</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Skills Section -->
+    <section class="py-5 bg-light" id="Skills">
+        <div class="container py-5">
+            <h2 class="display-4 fw-bold text-center mb-5">
+                <i class="bi bi-code-slash text-primary me-3"></i>Skills
+            </h2>
+            <div class="row g-4">
+                <!-- Frontend Skills -->
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="card-body p-4 text-center">
+                            <i class="bi bi-palette fs-1 text-primary mb-3"></i>
+                            <h4 class="text-primary fw-bold mb-4">Frontend</h4>
+                            <div class="d-flex flex-wrap justify-content-center gap-2">
+                                <span class="badge bg-primary fs-6 px-3 py-2 skill-badge">HTML5</span>
+                                <span class="badge bg-primary fs-6 px-3 py-2 skill-badge">CSS3</span>
+                                <span class="badge bg-primary fs-6 px-3 py-2 skill-badge">Bootstrap</span>
+                                <span class="badge bg-primary fs-6 px-3 py-2 skill-badge">JavaScript</span>
+                                <span class="badge bg-primary fs-6 px-3 py-2 skill-badge">jQuery</span>
+                                <span class="badge bg-primary fs-6 px-3 py-2 skill-badge">TypeScript</span>
+                                <span class="badge bg-primary fs-6 px-3 py-2 skill-badge">React</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Backend Skills -->
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="card-body p-4 text-center">
+                            <i class="bi bi-server fs-1 text-success mb-3"></i>
+                            <h4 class="text-success fw-bold mb-4">Backend</h4>
+                            <div class="d-flex flex-wrap justify-content-center gap-2">
+                                <span class="badge bg-success fs-6 px-3 py-2 skill-badge">Node.js</span>
+                                <span class="badge bg-success fs-6 px-3 py-2 skill-badge">Express.js</span>
+                                <span class="badge bg-success fs-6 px-3 py-2 skill-badge">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools -->
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="card-body p-4 text-center">
+                            <i class="bi bi-tools fs-1 text-warning mb-3"></i>
+                            <h4 class="text-warning fw-bold mb-4">Tools</h4>
+                            <div class="d-flex flex-wrap justify-content-center gap-2">
+                                <span class="badge bg-warning text-dark fs-6 px-3 py-2 skill-badge">Git</span>
+                                <span class="badge bg-warning text-dark fs-6 px-3 py-2 skill-badge">VS Code</span>
+                                <span class="badge bg-warning text-dark fs-6 px-3 py-2 skill-badge">Postman</span>
+                                <span class="badge bg-warning text-dark fs-6 px-3 py-2 skill-badge">Responsive Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Projects Section -->
+    <section class="py-5 bg-white" id="Projects">
+        <div class="container py-5">
+            <h2 class="display-4 fw-bold text-center mb-5">
+                <i class="bi bi-folder-fill text-primary me-3"></i>Projects
+            </h2>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="card-header bg-primary text-white p-4">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-globe me-2"></i>Personal Portfolio Website
+                            </h5>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="card-text text-muted mb-3">
+                                Built using HTML, CSS, and Bootstrap. Fully responsive and clean design showcasing my skills and projects.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark me-1 mb-1">HTML</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">CSS</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">Bootstrap</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">JavaScript</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-eye me-1"></i>Live Demo
+                                </a>
+                                <a href="#" class="btn btn-outline-secondary btn-sm">
+                                    <i class="bi bi-code me-1"></i>View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Project 3 -->
+                 <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="card-header bg-warning text-dark p-4">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-weather-sunny me-2"></i>Weather App
+                            </h5>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="card-text text-muted mb-3">
+                                Real-time weather application with location-based forecasts and interactive maps.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark me-1 mb-1">JavaScript</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">API</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">Bootstrap</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-eye me-1"></i>Live Demo
+                                </a>
+                                <a href="#" class="btn btn-outline-secondary btn-sm">
+                                    <i class="bi bi-code me-1"></i>View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="card-header bg-success text-white p-4">
+                            <h5 class="card-title mb-0">
+                                <i class="bi bi-check2-square me-2"></i>Smart Inventory Management
+                            </h5>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="card-text text-muted mb-3">
+                                Smart Management with Bar Coded streamlines your inventory, tracking every item with a quick scan.
+
+
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark me-1 mb-1">HTML</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">CSS</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">Bootstrap</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">React</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">Node.js</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">MongoDB</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">Express.js</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-eye me-1"></i>Live Demo
+                                </a>
+                                <a href="#" class="btn btn-outline-secondary btn-sm">
+                                    <i class="bi bi-code me-1"></i>View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Contact Section -->
+    <section class="py-5 bg-light" id="Contact">
+        <div class="container py-5">
+            <h2 class="display-4 fw-bold text-center mb-5">
+                <i class="bi bi-envelope-fill text-primary me-3"></i>Contact Me
+            </h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body p-5">
+                            <form id="contactForm">
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <label class="form-label fs-5 fw-medium">
+                                            <i class="bi bi-person me-2"></i>Full Name
+                                        </label>
+                                        <input type="text" class="form-control form-control-lg" 
+                                               placeholder="Enter your name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label class="form-label fs-5 fw-medium">
+                                            <i class="bi bi-envelope me-2"></i>Email Address
+                                        </label>
+                                        <input type="email" class="form-control form-control-lg" 
+                                               placeholder="name@example.com" required>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label fs-5 fw-medium">
+                                        <i class="bi bi-chat-text me-2"></i>Subject
+                                    </label>
+                                    <input type="text" class="form-control form-control-lg" 
+                                           placeholder="What's this about?" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label fs-5 fw-medium">
+                                        <i class="bi bi-chat-dots me-2"></i>Message
+                                    </label>
+                                    <textarea class="form-control form-control-lg" rows="5" 
+                                              placeholder="Type your message here..." required></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-success btn-lg px-5 py-3 rounded-pill fw-semibold">
+                                        <i class="bi bi-send me-2"></i>Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="mb-4">
+                        <a href="#" class="btn btn-outline-light btn-lg rounded-circle me-3" title="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-lg rounded-circle me-3" title="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-lg rounded-circle me-3" title="Twitter">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="mailto:dhurgasaran@example.com" class="btn btn-outline-light btn-lg rounded-circle" title="Email">
+                            <i class="bi bi-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="mb-3">
+                        <h5 class="fw-bold">Dhurgasaran</h5>
+                        <p class="text-light opacity-75">Full Stack Web Developer</p>
+                    </div>
+                    <hr class="my-4 opacity-25">
+                    <p class="mb-0 fs-5 fw-bold opacity-75">© 2025 Dhurgasaran | All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
